@@ -14,7 +14,7 @@ To do this, we compile with [Crosswalk](https://crosswalk-project.org/) to an An
 
 > :bulb: This approach is still highly experimental. Any support/suggestions would be helpful.
 
-First, you need the required Crosswalk dependencies, [see here](https://crosswalk-project.org/documentation/android.html). In short, you need `java`, `ant`, `python` and `adb` all set up and your environment variables correct.
+First, you need the required Crosswalk dependencies, [see here](https://crosswalk-project.org/documentation/android.html). In short, you need `java`, `ant`, `python` and `adb` all set up and your environment variables correct. You also need the [Android SDK](http://developer.android.com/sdk/index.html#Other).
 
 Next, you need the correct Android target to build Crosswalk (API Levle 21+). Run the following:
 
