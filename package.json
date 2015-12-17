@@ -1,0 +1,43 @@
+{
+  "name": "webvr-gearvr-test",
+  "version": "1.0.0",
+  "description": "a simple test of WebVR running natively in GearVR",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "budo": "^7.0.4",
+    "crosswalk-app-tools": "mattdesl/crosswalk-app-tools#gearvr",
+    "del": "^2.2.0",
+    "rimraf": "^2.4.4"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "build": "rimraf *.apk && crosswalk-pkg --targets=x86 app/",
+    "push": "adb push com.foobar.example-0.1-debug.armeabi-v7a.apk /sdcard/",
+    "xwalk": "npm run build && push",
+    "start": "budo --dir app --live --open"
+  },
+  "keywords": [
+    "gearvr",
+    "oculus",
+    "run",
+    "test",
+    "webvr",
+    "web",
+    "vr"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jam3/webvr-gearvr-test.git"
+  },
+  "homepage": "https://github.com/Jam3/webvr-gearvr-test",
+  "bugs": {
+    "url": "https://github.com/Jam3/webvr-gearvr-test/issues"
+  }
+}

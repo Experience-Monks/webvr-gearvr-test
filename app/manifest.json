@@ -1,0 +1,7 @@
+{
+  "name": "webvr-gearvr-test",
+  "start_url": "index.html",
+  "orientation": "landscape",
+  "xwalk_command_line": "--ignore-gpu-blacklist",
+  "xwalk_package_id": "com.foobar.example"
+}
