@@ -2,6 +2,11 @@
   "name": "webvr-gearvr-test",
   "start_url": "index.html",
   "orientation": "landscape",
-  "xwalk_command_line": "--ignore-gpu-blacklist",
+  "display": "fullscreen",
+  "xwalk_command_line": "--enable-webvr --ignore-gpu-blacklist --disable-composited-antialiasing --disable-gesture-requirement-for-media-fullscreen --disable-gesture-requirement-for-media-playback --canvas-msaa-sample-count=0",
   "xwalk_package_id": "com.foobar.example"
 }
+
+
+
+

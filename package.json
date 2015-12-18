@@ -20,7 +20,7 @@
     "test": "node test.js",
     "build": "rimraf *.apk && crosswalk-pkg --targets=x86 app/",
     "push": "adb push com.foobar.example-0.1-debug.armeabi-v7a.apk /sdcard/",
-    "xwalk": "npm run build && push",
+    "xwalk": "npm run build && npm run push",
     "start": "budo --dir app --live --open"
   },
   "keywords": [
